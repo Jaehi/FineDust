@@ -1,4 +1,4 @@
-package com.applemango.finedust
+package com.applemango.finedust.dust
 
 import com.google.gson.annotations.SerializedName
 

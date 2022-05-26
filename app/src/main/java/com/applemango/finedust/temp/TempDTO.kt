@@ -1,4 +1,4 @@
-package com.applemango.finedust
+package com.applemango.finedust.temp
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable

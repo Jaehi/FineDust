@@ -6,36 +6,62 @@
             name="mainviewmodel"
             type="com.applemango.finedust.MainViewModel" />
     </data>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#54BEED"
         tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/temp"
-            android:text="@{mainviewmodel.temp.toString()}"
+            android:id="@+id/default_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <!--            android:text="@{viewmodel.temp}"-->
+            android:text="현재 서울의  미세먼지 상태는.."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="80dp"
+            android:textSize="30sp"
+            />
+
         <TextView
             android:id="@+id/dust"
-            android:text="@{mainviewmodel.statelist.toString()}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{mainviewmodel.statelist.toString()}"
             android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/temp"
+            android:textSize="100sp"
+            android:layout_marginTop="80dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/default_text" />
+
+        <TextView
+            android:id="@+id/default_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 서울의 기온은.."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dust"
+            android:layout_marginTop="80dp"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{mainviewmodel.temp.toString()}"
+            android:textColor="#000000"
+            android:textSize="100sp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/default_text2"
 
             />
 

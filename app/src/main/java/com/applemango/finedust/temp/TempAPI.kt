@@ -1,4 +1,4 @@
-package com.applemango.finedust
+package com.applemango.finedust.temp
 
 import retrofit2.Call
 import retrofit2.http.GET
