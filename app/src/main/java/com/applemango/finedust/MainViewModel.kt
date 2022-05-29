@@ -29,7 +29,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }, 0, 300000)
 
     val temp = Transformations.map(tempList) {
-        (it.main?.temp?.minus(273.15f))?.toInt().toString()
+        (it.main?.temp?.minus(273.15f))?.toInt().toString()+"°"
     }
 
     val statelist = Transformations.map(dust) {
