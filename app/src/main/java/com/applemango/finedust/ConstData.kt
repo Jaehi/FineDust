@@ -8,5 +8,5 @@ object ConstData {
     const val TEMP_KEY = "f69ce33f0e71af6781c34928fb50d0e3"
     const val TEMP_AREA = "Seoul"
     const val LANG = "kr"
-
+    const val LOCATION = "서울"
 }

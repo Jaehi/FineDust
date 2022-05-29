@@ -35,7 +35,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val statelist = Transformations.map(dust) {
         getState(
             it?.body?.item?.itemlist?.get(0)?.informGrade?.split(",")?.filter { state ->
-                state.contains("서울")
+                state.contains(ConstData.LOCATION)
             }.toString()
         )
     }

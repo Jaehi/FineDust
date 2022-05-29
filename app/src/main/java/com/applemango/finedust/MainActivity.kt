@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         bind.mainviewmodel = viewModel
         bind.lifecycleOwner = this
-        
+
     }
 
 
